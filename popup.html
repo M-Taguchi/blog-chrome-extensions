@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="modal-content min-w-400">
+    <div class="modal-body">
+      <p>ブログ記事生成ツール</p>
+      <div>
+        <a id="link_chat" href="javascript:void(0)">チャットページへ遷移</a>
+        <a id="link_compose" href="javascript:void(0)">執筆ページへ遷移</a>
+      </div>
+      <div>
+        <p>生成する内容を選択</p>
+        <select class="form-select" aria-label="select generate content">
+          <option value="1" selected>タイトルの生成</option>
+          <option value="2">記事の構成生成</option>
+          <option value="3">記事の内容生成</option>
+        </select>
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" id="button">生成</button>
+    </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popup.js"></script>
+  </div>
+</body>
+</html>

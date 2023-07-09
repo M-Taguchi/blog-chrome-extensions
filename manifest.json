@@ -1,0 +1,22 @@
+{
+    "manifest_version":3,
+    "name":"いま表示されてる画面のDOMを操作する",
+    "version":"1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts":[
+      {
+        "matches":[
+          "http://*/*",
+          "https://*/*"
+        ],
+        "js":[
+          "js/content_script.js"
+        ]
+      }
+    ],
+    "permissions": [
+      "tabs"
+    ]
+  }
