@@ -1,3 +1,7 @@
 .min-w-400 {
     min-width: 400px;
 }
+
+.hidden {
+    display: none;
+}

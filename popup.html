@@ -15,7 +15,7 @@
       </div>
       <div>
         <p>生成する内容を選択</p>
-        <select class="form-select" aria-label="select generate content">
+        <select id="genre" class="form-select" aria-label="select generate content">
           <option value="1" selected>タイトルの生成</option>
           <option value="2">記事の構成生成</option>
           <option value="3">記事の内容生成</option>
@@ -28,8 +28,10 @@
     <div class="modal-footer">
       <button class="btn btn-primary" id="button">生成</button>
     </div>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popup.js"></script>
+    <iframe id="underside-iframe-container" name="underside-iframe-container" class="hidden" frameborder="0" allow="clipboard-write"></iframe>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/iframe.js"></script>
   </div>
 </body>
 </html>
