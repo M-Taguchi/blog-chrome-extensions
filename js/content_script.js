@@ -1,23 +1,19 @@
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   switch(request.type) {
     case "GENERATE_TITLE":
-      generateFromChat("テスト1")
-      break;
     case "GENERATE_COMPOSITION":
-      generateFromChat("テスト2")
+      generateFromChat(request.data.prompt);
       break;
     case "GENERATE_ARTICLE":
-      generateFromCompose("テスト3")
+      generateFromCompose(request.data.prompt);
       break;
     default:
       // ChatGPT用
       // const textarea = document.querySelector("#prompt-textarea");
-      // const submitBtn = actionbar.querySelector("button[aria-label='送信']");
       // textarea.value = "テスト";
       // textarea.dispatchEvent(new Event('input', {
         // bubbles: true
       // }));
-      // submitBtn.click();
       // textarea.nextElementSibling.click();
   }
 });

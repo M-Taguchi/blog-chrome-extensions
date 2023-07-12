@@ -1,6 +1,6 @@
 {
     "manifest_version":3,
-    "name":"いま表示されてる画面のDOMを操作する",
+    "name":"ブログ記事自動生成ツール",
     "version":"1.0",
     "action": {
       "default_popup": "popup.html"
