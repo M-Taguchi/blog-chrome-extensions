@@ -1,9 +1,9 @@
 {
     "manifest_version":3,
-    "name":"ブログ記事自動生成ツール",
+    "name":"ブログ記事自動生成ツール（サイドパネル）",
     "version":"1.0",
-    "action": {
-      "default_popup": "popup.html"
+    "side_panel": {
+      "default_path": "sidepanel.html"
     },
     "background": {
       "service_worker": "js/background.js"
@@ -21,7 +21,8 @@
     "permissions": [
       "declarativeNetRequest",
       "tabs",
-      "notifications"
+      "notifications",
+      "sidePanel"
     ],
     "host_permissions": [
       "<all_urls>"
